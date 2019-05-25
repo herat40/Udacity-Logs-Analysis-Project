@@ -1,11 +1,8 @@
 # Udacity-Logs-Analysis-Project
-
-Logs Analysis Project:
-
 It is the first project in Udacity's Full Stack Web Developer Nano-degree program.
 
 
-Project Description:
+## Project Description:
 
 You've been asked to build an internal reporting tool that will use information from a database for a newspaper site to discover what kind of articles the site's readers like. The database contains newspaper articles, as well as the web server log for the site. The log has a database row for each time a reader loaded a web page. Using that information, your code will answer questions about the site's user activity.
 
@@ -15,14 +12,14 @@ What are the most popular three articles of all time?
 Who are the most popular article authors of all time?
 On which days did more than 1% of requests lead to errors?
 
-Requirements:
+### Requirements:
 
 [Python3](https://www.python.org): The code is using python version 3.7.1.     
 [Vagrant](https://www.vagrantup.com): Tool for building and managing virtual machine environments.   
 [VirtualBox](https://www.virtualbox.org): Open source virtualization software.
 
 
-Steps To Run The Code:
+### Steps To Run The Code:
 
 1. Download and install the latest version of [Python](https://www.python.org).
 2. Download and install [Vagrant](https://www.vagrantup.com/downloads.html) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
@@ -34,7 +31,7 @@ Steps To Run The Code:
 8. Create views that are given below.
 9. Run the python file project.py
 
-Views For Question 3:
+### Views For Question 3:
 
 CREATE VIEW logstat AS       
 SELECT count(*) as stat,            
