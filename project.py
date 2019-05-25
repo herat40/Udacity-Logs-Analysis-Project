@@ -33,7 +33,7 @@ query_3 = ("SELECT round((stat*100.0)/visitors, 3) as\n"
 #Connect to the database and feed query to extract results.
 
 
-def get_queryResults(sql_query):
+def queryResults(sql_query):
     db = psycopg2.connect(database=DBNAME)
     c = db.cursor()
     c.execute(sql_query)
@@ -41,15 +41,15 @@ def get_queryResults(sql_query):
     db.close()
     return results
 
-result1 = get_queryResults(query_1)
-result2 = get_queryResults(query_2)
-result3 = get_queryResults(query_3)
+result1 = queryResults(query_1)
+result2 = queryResults(query_2)
+result3 = queryResults(query_3)
 
 
 # This function prints query results.
 
 
-def print_results(q):
+def print_result(q):
     for i in range(len(q)):
         title = q[i][0]
         res = q[i][1]
@@ -57,8 +57,8 @@ def print_results(q):
     print("\n")
 
 print(question1)
-print_results(result1)
+print_result(result1)
 print(question2)
-print_results(result2)
+print_result(result2)
 print(question3)
 print("\t" + result3[0][1] + " - " + str(result3[0][0]) + "%")
